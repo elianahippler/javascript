@@ -22,11 +22,15 @@
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1> <!-- comentário em html -->
+    <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <script>
-        var nome = window.prompt('Qual é seu nome?') //vai perguntar o nome
-        window.alert('É um grande prazer te conhecer, ' + nome + "!") // + = concatenação
+       var n1 = Number(prompt('Insira o primeiro número:')) //string
+       var n2 = Number(prompt('Insira o segundo número:')) //string
+       var total = n1 + n2
+       alert(`A soma entre ${n1} e ${n2} é igual á ${total}`)
+       // (number + number) para adição
+       // (string + string) para concatenação
     </script>
 </body>
 </html>
