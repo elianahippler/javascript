@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body, input {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        input[type=number]{
+            background-color: #e4cbf7ea;
+            width: 200px;
+            height: 36px;
+            line-height: 36px;
+            border: none;
+            border-radius: 10px;
+        }
+        
+        input[type=number]:hover{
+            background-color: #d1b8e4ea;
+        }
+
+        input[type=button], div#res{
+            display: inline-block;
+            background-color: #bfa9d1ea;
+            width: 100px;
+            height: 36px; 
+            border: none;
+            border-radius: 10px;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        div#res{
+            background-color: #9cc8caea;
+        }
+
+        input[type=button]:hover{
+            background-color: #ac8ec5ea;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="itxtn1"> +
+    <input type="number" name="txtn2" id="itxtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar(){
+            var tn1 = document.querySelector('input#itxtn1')
+            var tn2 = document.querySelector('input#itxtn2')
+            var res = document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            res.innerHTML = soma
+           }
+    </script>
+</body>
+</html>
