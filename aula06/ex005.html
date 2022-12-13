@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
+    <style>
+        html{
+            width: 100vw;
+            height: 100vh;
+        }
+        body{
+            background-image: linear-gradient(to bottom, #cd5c5c21, #cd5c5c93);
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #caixa {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+            background-color: #6e254dab;
+            text-align: justify;
+            padding: 5px;
+            box-shadow: 0px 0px 40px white;
+        }
+    </style>
 </head>
 <body>
     <h1>Iniciando estudos com DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        var d = document.querySelector('div#msg')
+        d.style.background = 'orange'
+</script>
 </body>
 </html>
